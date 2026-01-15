@@ -29,12 +29,20 @@ public class LoginTest {
 
         driver.get("http://localhost:8080"); //navigate to the URL of the application
 
-        //Act
-        driver.findElement(By.name("email")).sendKeys("admin@test.com");//find the email input field by its name attribute and enter the email address
-        driver.findElement(By.name("password")).sendKeys("password123");//find the password input field by its name attribute and enter the password
+        // Wait for the email field to be present and visible
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        try {
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("email")));
+        } catch (Exception e) {
+            System.out.println("DEBUG: Current URL: " + driver.getCurrentUrl());
+            System.out.println("DEBUG: Page source:\n" + driver.getPageSource());
+            throw e;
+        }
+        driver.findElement(By.name("email")).sendKeys("admin@test.com");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("password")));
+        driver.findElement(By.name("password")).sendKeys("password123");
         driver.findElement(By.cssSelector("button")).click();//find the button element using a CSS selector and click it to submit the form
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));//create a WebDriverWait object to wait for a maximum of 10 seconds for a specific condition to be met
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".card-title")));//wait until an element
 
         //Assert
