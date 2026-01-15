@@ -2,6 +2,7 @@ package com.ministryoftesting;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
 public class AuthPayLoad {
 //Declare the variables for the class that match the key names in the JSON payload
     @JsonProperty
@@ -22,6 +23,7 @@ we need to provide ‘getter’ methods. So that the tooling can extract the val
     }
 
     public String getPassword() {
+
         return password;
     }
 

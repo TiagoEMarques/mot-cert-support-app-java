@@ -1,0 +1,55 @@
+2026-01-15T16:50:29.281Z  INFO 35104 --- [main] c.m.api.TimesheetManagerApplication      : Starting TimesheetManagerApplication using Java 25.0.1 with PID 35104 (/Users/tiago.marques2/Documents/GitHub/mot-cert-support-app-java2/target/classes started by tiago.marques2 in /Users/tiago.marques2/Documents/GitHub/mot-cert-support-app-java2)
+2026-01-15T16:50:29.281Z  INFO 35104 --- [main] c.m.api.TimesheetManagerApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-01-15T16:50:29.686Z  INFO 35104 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-01-15T16:50:29.692Z  INFO 35104 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-15T16:50:29.692Z  INFO 35104 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2026-01-15T16:50:29.720Z  INFO 35104 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-01-15T16:50:29.720Z  INFO 35104 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 363 ms
+2026-01-15T16:50:29.801Z  INFO 35104 --- [main] com.ministryoftesting.db.BaseDB          : DB server mode disabled
+2026-01-15T16:50:29.852Z  INFO 35104 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
+2026-01-15T16:50:29.986Z  INFO 35104 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-01-15T16:50:29.990Z  INFO 35104 --- [main] c.m.api.TimesheetManagerApplication      : Started TimesheetManagerApplication in 0.854 seconds (process running for 0.985)
+2026-01-15T16:51:38.350Z  INFO 35104 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-15T16:51:38.350Z  INFO 35104 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-15T16:51:38.351Z  INFO 35104 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-01-15T16:53:46.155Z  INFO 35966 --- [main] c.m.api.TimesheetManagerApplication      : Starting TimesheetManagerApplication v0.1 using Java 25.0.1 with PID 35966 (/Users/tiago.marques2/Documents/GitHub/mot-cert-support-app-java2/target/mot-cert-support-app-java-0.1-exec.jar started by tiago.marques2 in /Users/tiago.marques2/Documents/GitHub/mot-cert-support-app-java2)
+2026-01-15T16:53:46.156Z  INFO 35966 --- [main] c.m.api.TimesheetManagerApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-01-15T16:53:46.692Z  INFO 35966 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-01-15T16:53:46.698Z  INFO 35966 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-15T16:53:46.698Z  INFO 35966 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2026-01-15T16:53:46.716Z  INFO 35966 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-01-15T16:53:46.716Z  INFO 35966 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 434 ms
+2026-01-15T16:53:46.812Z  INFO 35966 --- [main] com.ministryoftesting.db.BaseDB          : DB server mode disabled
+2026-01-15T16:53:46.871Z  INFO 35966 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
+2026-01-15T16:53:47.029Z  WARN 35966 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-01-15T16:53:47.036Z  INFO 35966 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-01-15T16:53:47.045Z ERROR 35966 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-01-15T16:55:00.414Z  INFO 36249 --- [main] c.m.api.TimesheetManagerApplication      : Starting TimesheetManagerApplication v0.1 using Java 25.0.1 with PID 36249 (/Users/tiago.marques2/Documents/GitHub/mot-cert-support-app-java2/target/mot-cert-support-app-java-0.1-exec.jar started by tiago.marques2 in /Users/tiago.marques2/Documents/GitHub/mot-cert-support-app-java2)
+2026-01-15T16:55:00.416Z  INFO 36249 --- [main] c.m.api.TimesheetManagerApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-01-15T16:55:01.028Z  INFO 36249 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-01-15T16:55:01.034Z  INFO 36249 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-15T16:55:01.034Z  INFO 36249 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2026-01-15T16:55:01.051Z  INFO 36249 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-01-15T16:55:01.051Z  INFO 36249 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 492 ms
+2026-01-15T16:55:01.151Z  INFO 36249 --- [main] com.ministryoftesting.db.BaseDB          : DB server mode disabled
+2026-01-15T16:55:01.216Z  INFO 36249 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
+2026-01-15T16:55:01.393Z  INFO 36249 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-01-15T16:55:01.402Z  INFO 36249 --- [main] c.m.api.TimesheetManagerApplication      : Started TimesheetManagerApplication in 1.241 seconds (process running for 1.516)
+2026-01-15T17:02:55.710Z  INFO 36249 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-15T17:02:55.711Z  INFO 36249 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-15T17:02:55.712Z  INFO 36249 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

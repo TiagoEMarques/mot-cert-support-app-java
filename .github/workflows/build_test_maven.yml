@@ -8,15 +8,15 @@ jobs:
 
     steps: #steps to be executed in the job
       - uses: actions/checkout@v3 # use the checkout liberary checkout, wich downloads the code from the repo onto MacOS machine that the pipeline is running on
-      - name: Set up JDK 18 #step name
+      - name: Set up JDK 25 #step name
         uses: actions/setup-java@v3 #use the setup-java action to setup java
         with:
-          java-version: '21' #specify the java version
+          java-version: '25' #specify the java version
           distribution: 'temurin' #specify the distribution
       - name: Build project and run unit and API checks #step name
         run: mvn --batch-mode package #command to build the maven project and run unit and API tests
       - name: Run E2E checks #step name
         run: | # we start the application calling java -jar and we wait 10 secs for the application be ready
-          java -jar target//lj-support-app-java-*-exec.jar & 
-          sleep 10 
+          java -jar target/mot-cert-support-app-java-*-exec.jar &
+          sleep 10
           mvn test -Dtest=LoginTest
