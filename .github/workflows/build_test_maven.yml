@@ -20,3 +20,10 @@ jobs:
           java -jar target/mot-cert-support-app-java-*-exec.jar &
           sleep 10
           mvn test -Dtest=LoginTest
+
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action/macos@v2 #lib to extract our test report files
+        if: always() #ensure that this action is run even if the tests fail
+        with:
+          files: | #test report location
+            target/surefire-reports/*.xml
